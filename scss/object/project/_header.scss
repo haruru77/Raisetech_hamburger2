@@ -1,0 +1,40 @@
+.p-header {
+    &__top {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        color: $main-color;
+        h1 {
+            font-size: 2.5em;
+            padding-top: 40px;
+        }
+    }
+}
+
+.p-search-form {
+    padding: 38px 0;
+    input {
+        height: 46px;
+        border-radius: 10px;
+        &[type=text]{
+            width:60%;
+            font-family: fontawesome;
+            padding-left: 5px;
+            border: 1px solid $main-color;
+        }
+        &[type=submit]{
+            width:30%;
+            background-color: #F2EDE9;
+            color: $main-color;
+        }
+    }
+}
+
+.p-header__menu {
+    color: $main-color;
+    font-size: 4.2vw;
+    font-weight: bold;
+    position: absolute;
+    top: 16px;
+    right: 18px;
+}

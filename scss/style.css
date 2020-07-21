@@ -1,0 +1,206 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.l-header {
+  height: 217px;
+  background-color: #FFF7EF;
+}
+
+.p-header__top {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #707070;
+}
+
+.p-header__top h1 {
+  font-size: 2.5em;
+  padding-top: 40px;
+}
+
+.p-search-form {
+  padding: 38px 0;
+}
+
+.p-search-form input {
+  height: 46px;
+  border-radius: 10px;
+}
+
+.p-search-form input[type=text] {
+  width: 60%;
+  font-family: fontawesome;
+  padding-left: 5px;
+  border: 1px solid #707070;
+}
+
+.p-search-form input[type=submit] {
+  width: 30%;
+  background-color: #F2EDE9;
+  color: #707070;
+}
+
+.p-header__menu {
+  color: #707070;
+  font-size: 4.2vw;
+  font-weight: bold;
+  position: absolute;
+  top: 16px;
+  right: 18px;
+}
+
+.p-main-img {
+  height: 285px;
+  width: auto;
+  background-image: url(/img/top_bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.p-main-img h2 {
+  color: #ffffff;
+  line-height: 285px;
+  padding-left: 30px;
+}
+
+.branch-menu h3 {
+  color: #ffffff;
+  font-size: 2.5em;
+  padding: 15px 10px;
+}
+
+.branch-menu dl {
+  color: #3C2A10;
+  min-height: 163px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 10px;
+}
+
+.branch-menu dl dt {
+  font-size: 1.25em;
+  padding: 20px 11px;
+}
+
+.branch-menu dl dd {
+  padding: 0 10px;
+}
+
+.branch-menu__contents__takeout {
+  background-image: url(/img/branch_cts01.png);
+  background-size: cover;
+  margin: 20px;
+  min-height: 642px;
+  position: relative;
+}
+
+.branch-menu__contents__takeout__desc {
+  position: absolute;
+  bottom: 0;
+}
+
+.branch-menu__contents__eatin {
+  background-image: url(/img/branch_cts02.png);
+  background-size: cover;
+  margin: 20px;
+  min-height: 642px;
+  position: relative;
+}
+
+.branch-menu__contents__eatin__desc {
+  position: absolute;
+  bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
