@@ -18,29 +18,31 @@ body {
       "footer footer";
     grid-template-rows: 217px auto 150px;
     grid-template-columns: auto 20%;
+
+    .l-header {
+      grid-area: header;
+    }
+     
+    .l-article-contents {
+      grid-area: main;
+    }
+     
+    .l-article-sidebar {
+      grid-area: sidebar;
+    }
+     
+    .l-footer {
+      grid-area: footer;
+    }
+    
+    .l-header {
+      height: 217px;
+      background-color: #fff7ef;
+    }
   }
 }
 
-.l-header {
-  grid-area: header;
-}
- 
-.l-article-contents {
-  grid-area: main;
-}
- 
-.l-article-sidebar {
-  grid-area: sidebar;
-}
- 
-.l-footer {
-  grid-area: footer;
-}
 
-.l-header {
-  height: 217px;
-  background-color: #fff7ef;
-}
 
 .p-sidebar__back {
   transform: translateX(-100vw);
