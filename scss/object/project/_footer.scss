@@ -1,0 +1,20 @@
+.p-footer {
+    &__menu {
+        color: #ffffff;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        li {
+            margin-top: 40px;
+            padding: 0 5px;
+        }
+        li + li {
+            border-left: 2px solid #ffffff;
+        }
+    }
+}
+.copyright {
+    margin-top: 35px;
+    color: #ffffff;
+    font-style: normal;
+}

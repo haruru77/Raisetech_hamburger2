@@ -1,0 +1,34 @@
+.p-access {
+    
+    position: relative;
+    &__desc {
+        height: 415px;
+        background-color: rgba(0,0,0,0.3);
+        color: #ffffff;
+        position: absolute;
+        z-index: 10;
+        h2 {
+            font-size: 1.875em;
+            margin: 40px 42px 0;
+        }
+        p {
+            font-size: 0.875em;
+            margin: 0 40px;
+        }
+        span {
+            margin: 20px 42px;
+            display: inline-block;
+            width: 75px;
+            height: 2px;
+            background-color: #ffffff;
+        }
+    }
+    &__map {
+        height: 690px;
+        background-image: url(/img/map.png);
+        background-size: cover;
+        @include break($tb) { 
+            height: 415px; 
+          }
+    }
+}

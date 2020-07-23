@@ -1,0 +1,77 @@
+.p-main-img {
+    height: 285px;
+    width: auto;
+    background-image: url(/img/top_bg.png);
+    background-position: center;
+    background-size: cover;
+    h2 {
+        font-size: 2.25em;
+        color: #ffffff;
+        line-height: 285px;
+        padding-left: 30px;
+    }
+}
+.branch-menu {
+    &__contents {
+        @include break($tb) { 
+            display: flex; 
+            justify-content: space-around;
+          }
+    }
+    h3 {
+        color: #ffffff;
+        font-size: 2.5em;
+        padding:15px 10px 10px;
+    }
+    span {
+        margin-left: 10px;
+        display: inline-block;
+        width: 34px;
+        height: 4px;
+        background-color: #ffffff;
+    }
+        dl {
+            color: $description-color;
+            min-height: 163px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 10px;
+            dt {
+                font-size: 1.25em;
+                padding:20px 11px;
+            }
+            dd {
+                padding: 0 10px;
+            }
+            
+        }
+
+        &__contents__takeout {
+            background-image: url(/img/branch_cts01.png);
+            background-size: cover;
+            margin: 20px;
+            min-height: 642px;
+            position: relative;
+            &__desc {
+                position: absolute;
+                bottom: 0;
+            }
+            @include break($tb) { 
+                width: 100%;; 
+              }
+        }
+        &__contents__eatin {
+            background-image: url(/img/branch_cts02.png);
+            background-size: cover;
+            margin: 20px;
+            min-height: 642px;
+            position: relative;
+            &__desc {
+                position: absolute;
+                bottom: 0;
+            }
+            @include break($tb) { 
+                width: 100%;; 
+              }
+        }
+    }
+
