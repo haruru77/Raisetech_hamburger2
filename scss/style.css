@@ -141,10 +141,11 @@ body {
     -ms-grid-column-span: 2;
     grid-area: footer;
   }
-  .all-wrapper .l-header {
-    height: 217px;
-    background-color: #fff7ef;
-  }
+}
+
+.l-header {
+  height: 217px;
+  background-color: #fff7ef;
 }
 
 .p-sidebar__back {
@@ -427,13 +428,25 @@ body {
 }
 
 .p-sidebar__menu__main {
-  font-size: 1.5vw;
+  font-size: 1.5em;
   padding: 40px 0;
 }
 
+@media (min-width: 992px) {
+  .p-sidebar__menu__main {
+    font-size: 1.5vw;
+  }
+}
+
 .p-sidebar__menu__list li {
-  font-size: 1.25vw;
+  font-size: 1.25em;
   padding-bottom: 25px;
+}
+
+@media (min-width: 992px) {
+  .p-sidebar__menu__list li {
+    font-size: 1.25vw;
+  }
 }
 
 .p-sidebar__menu__wrap {

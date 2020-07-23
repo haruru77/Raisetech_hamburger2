@@ -14,14 +14,20 @@
         padding: 0 0 40px;
     }
     &__menu__main {
-        font-size: 1.5vw;
+        font-size: 1.5em;
         padding: 40px 0;
+        @include break($pc) { 
+            font-size: 1.5vw;
+          }
     }
 
     &__menu__list {
         li {
-            font-size: 1.25vw;
+            font-size: 1.25em;
             padding-bottom: 25px;
+            @include break($pc) { 
+                font-size: 1.25vw;
+              }
         }
     }
     
