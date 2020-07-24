@@ -9,48 +9,49 @@
             padding-left: 46px;
         }
     }
-    
+
     &__menu__main:first-of-type {
         padding: 0 0 40px;
     }
     &__menu__main {
         font-size: 1.5em;
         padding: 40px 0;
-        @include break($pc) { 
+        @include break($pc) {
             font-size: 1.5vw;
-          }
+        }
     }
 
     &__menu__list {
         li {
             font-size: 1.25em;
             padding-bottom: 25px;
-            @include break($pc) { 
+            @include break($pc) {
                 font-size: 1.25vw;
-              }
+            }
         }
     }
-    
 }
 .p-sidebar__menu__wrap {
     min-width: 328px;
     min-height: 100%;
     background-color: #f2ede9;
-    transform: translateX(-100vw);
-    transition: all 0.3s linear;
+    display: none;
+    // transform: translateX(-100vw);
+    // transition: all 0.3s linear;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 100;
-    &.is-active {
-        transform: translateX(0);
-    }
-    @include break($pc) { 
+    // &.is-active {
+    //     transform: translateX(0);
+    // }
+    @include break($pc) {
         position: relative;
         z-index: 0;
         width: 100%;
-        transform: translateX(0);
-      }
+        // transform: translateX(0);
+        display: block;
+    }
 }
 
 .close {
@@ -59,21 +60,22 @@
     right: 25px;
     font-size: 2em;
     color: $main-color;
-    @include break($pc) { 
-        display: none; 
-      }
+    @include break($pc) {
+        display: none;
+    }
 }
 
 .p-sidebar__pc__menu {
-        display: none;
-        color: $main-color;
-        font-size: 2.125vw;
-        font-weight: bold;
-        position: absolute;
-        top: 82px;
-        left: 42px;
-        z-index: 100;
-        @include break($pc) { 
-            display: block;
+    font-family: "Roboto", sans-serif;
+    display: none;
+    color: $main-color;
+    font-size: 2.125vw;
+    font-weight: bold;
+    position: absolute;
+    top: 82px;
+    left: 42px;
+    z-index: 100;
+    @include break($pc) {
+        display: inline-block;
     }
 }

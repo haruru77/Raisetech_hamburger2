@@ -1,6 +1,6 @@
 $(".p-sidebar").click(function() {
     // $(this).toggleClass("on");
-    $(".p-sidebar__menu__wrap").toggleClass('is-active');
-    $(".l-nav-close").toggleClass('is-active');
-    $(".p-sidebar__back").toggleClass('is-active');
+    $(".p-sidebar__menu__wrap").slideToggle(300);
+    $(".l-nav-close").slideToggle(300);
+    $(".p-sidebar__back").slideToggle(300);
   });
