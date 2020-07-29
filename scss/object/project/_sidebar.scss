@@ -1,7 +1,6 @@
 .p-sidebar {
     &__main {
         position: relative;
-
         padding-top: 217px;
         ul {
             color: $main-color;
@@ -9,21 +8,19 @@
             padding-left: 46px;
         }
     }
-
     &__menu__main:first-of-type {
         padding: 0 0 40px;
     }
     &__menu__main {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         padding: 40px 0;
         @include break($pc) {
             font-size: 1.5vw;
         }
     }
-
     &__menu__list {
         li {
-            font-size: 1.25em;
+            font-size: 1.25rem;
             padding-bottom: 25px;
             @include break($pc) {
                 font-size: 1.25vw;
@@ -31,6 +28,7 @@
         }
     }
 }
+
 .p-sidebar__menu__wrap {
     min-width: 328px;
     min-height: 100%;
@@ -51,31 +49,5 @@
         width: 100%;
         // transform: translateX(0);
         display: block;
-    }
-}
-
-.close {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    font-size: 2em;
-    color: $main-color;
-    @include break($pc) {
-        display: none;
-    }
-}
-
-.p-sidebar__pc__menu {
-    font-family: "Roboto", sans-serif;
-    display: none;
-    color: $main-color;
-    font-size: 2.125vw;
-    font-weight: bold;
-    position: absolute;
-    top: 82px;
-    left: 42px;
-    z-index: 100;
-    @include break($pc) {
-        display: inline-block;
     }
 }

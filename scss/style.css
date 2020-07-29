@@ -90,7 +90,7 @@ img:not([alt]) {
 }
 
 * {
-  font-family: "M PLUS 1p";
+  font-family: "M+ 1m";
 }
 
 .l-footer {
@@ -117,7 +117,7 @@ body {
   .all-wrapper {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header sidebar" "main sidebar" "footer footer";
+        grid-template-areas: "header sidebar" "main sidebar" "footer footer";
     -ms-grid-rows: 217px auto 150px;
         grid-template-rows: 217px auto 150px;
     -ms-grid-columns: auto 20%;
@@ -194,7 +194,7 @@ body {
 
 .p-header__top h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   padding-top: 40px;
 }
 
@@ -300,7 +300,7 @@ body {
 .branch-menu h3 {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   padding: 15px 10px 10px;
 }
 
@@ -320,7 +320,8 @@ body {
 }
 
 .branch-menu dl dt {
-  font-size: 1.25em;
+  font-size: 1.25rem;
+  font-weight: bold;
   padding: 20px 11px;
 }
 
@@ -398,7 +399,7 @@ body {
 }
 
 .p-access__desc h2 {
-  font-size: 1.875em;
+  font-size: 1.875rem;
   margin: 40px 42px 0 42px;
 }
 
@@ -409,8 +410,9 @@ body {
 }
 
 .p-access__desc p {
-  font-size: 0.875em;
+  font-size: 0.875rem;
   margin: 0 40px;
+  line-height: 2;
 }
 
 @media (min-width: 1025px) {
@@ -493,7 +495,7 @@ body {
 }
 
 .p-sidebar__menu__main {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   padding: 40px 0;
 }
 
@@ -504,7 +506,7 @@ body {
 }
 
 .p-sidebar__menu__list li {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   padding-bottom: 25px;
 }
 
@@ -534,21 +536,7 @@ body {
   }
 }
 
-.close {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  font-size: 2em;
-  color: #707070;
-}
-
-@media (min-width: 1025px) {
-  .close {
-    display: none;
-  }
-}
-
-.p-sidebar__pc__menu {
+.u-sidebar__pc__menu {
   font-family: "Roboto", sans-serif;
   display: none;
   color: #707070;
@@ -561,8 +549,22 @@ body {
 }
 
 @media (min-width: 1025px) {
-  .p-sidebar__pc__menu {
+  .u-sidebar__pc__menu {
     display: inline-block;
+  }
+}
+
+.u-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 2rem;
+  color: #707070;
+}
+
+@media (min-width: 1025px) {
+  .u-close {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

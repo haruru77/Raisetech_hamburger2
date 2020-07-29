@@ -1,0 +1,25 @@
+.u-sidebar__pc__menu {
+    font-family: "Roboto", sans-serif;
+    display: none;
+    color: $main-color;
+    font-size: 2.125vw;
+    font-weight: bold;
+    position: absolute;
+    top: 82px;
+    left: 42px;
+    z-index: 100;
+    @include break($pc) {
+        display: inline-block;
+    }
+}
+
+.u-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 2rem;
+    color: $main-color;
+    @include break($pc) {
+        display: none;
+    }
+}
