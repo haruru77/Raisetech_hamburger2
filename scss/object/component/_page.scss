@@ -1,0 +1,55 @@
+.c-page {
+    &__sp {
+        padding: 70px 0 30px;
+        display: flex;
+        justify-content: space-between;
+        a {
+            color: #707070;
+            text-decoration: none;
+        }
+        i {
+            padding: 0 5px;
+        }
+        @include break($tb) {
+            display: none;
+        }
+    }
+    &__tb {
+        display: none;
+        color: #707070;
+        padding: 105px 0 30px;
+        justify-content: center;
+        align-items: center;
+        @include break($pc) {
+            padding: 150px 0 64px;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        a {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            color: #707070;
+            text-decoration: none;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 33px;
+            border: 1px solid #707070;
+            margin-right: 15px;
+        }
+        a:first-of-type,
+         :last-of-type {
+            border: none;
+        }
+        a:nth-of-type(2) {
+            color: #ffffff;
+            background-color: #3C2B1C;
+        }
+        @include break($tb) {
+            display: flex;
+        }
+    }
+}

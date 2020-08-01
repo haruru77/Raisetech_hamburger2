@@ -20,7 +20,8 @@
 // -----------------------------------------------------------------
 @import "object/component/_content";
 // @import "object/component/_button";
-// @import "object/component/_dialog";
+@import "object/component/_card";
+@import "object/component/_page";
 // @import "object/component/_grid";
 // @import "object/component/_media";
 // -----------------------------------------------------------------
@@ -31,7 +32,7 @@
 @import "object/project/_access";
 @import "object/project/_footer";
 @import "object/project/_sidebar";
-// @import "object/project/_articles";
+@import "object/project/_archive";
 // @import "object/project/_comments";
 // @import "object/project/_gallery";
 // @import "object/project/_profile";
