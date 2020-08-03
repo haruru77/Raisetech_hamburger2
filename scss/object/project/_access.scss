@@ -8,7 +8,7 @@
         z-index: 10;
         @include break($pc) {
             height: 649px;
-            width: 950px;
+            width: 60%;
         }
         h2 {
             font-size: 1.875rem;
@@ -40,11 +40,21 @@
         height: 690px;
         background-image: url(/img/map.png);
         background-size: cover;
+        position: relative;
         @include break($tb) {
             height: 415px;
         }
         @include break($pc) {
             height: 649px;
         }
+    }
+    &__map::after {
+        content: '';
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
     }
 }

@@ -31,8 +31,12 @@
     h3 {
         font-family: "Roboto", sans-serif;
         color: #ffffff;
+        font-weight: bold;
         font-size: 2.5rem;
         padding: 15px 10px 10px;
+        @include break($pc) {
+            font-size: 5rem;
+        }
     }
     span {
         margin-left: 10px;
@@ -46,6 +50,9 @@
         min-height: 163px;
         background-color: rgba(255, 255, 255, 0.8);
         margin: 10px;
+        @include break($pc) {
+            margin: 20px;
+        }
         dt {
             font-size: 1.25rem;
             font-weight: bold;
@@ -67,9 +74,11 @@
         }
         @include break($tb) {
             width: 100%;
+            margin: 40px 20px 40px 40px;
         }
         @include break($pc) {
             min-height: 1193px;
+            margin: 120px 40px 120px 110px;
         }
     }
     &__contents__eatin {
@@ -84,9 +93,11 @@
         }
         @include break($tb) {
             width: 100%;
+            margin: 40px 40px 40px 20px;
         }
         @include break($pc) {
             min-height: 1193px;
+            margin: 120px 110px 120px 40px;
         }
     }
 }

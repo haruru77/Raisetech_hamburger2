@@ -481,8 +481,15 @@ body {
 .branch-menu h3 {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
+  font-weight: bold;
   font-size: 2.5rem;
   padding: 15px 10px 10px;
+}
+
+@media (min-width: 1025px) {
+  .branch-menu h3 {
+    font-size: 5rem;
+  }
 }
 
 .branch-menu span {
@@ -498,6 +505,12 @@ body {
   min-height: 163px;
   background-color: rgba(255, 255, 255, 0.8);
   margin: 10px;
+}
+
+@media (min-width: 1025px) {
+  .branch-menu dl {
+    margin: 20px;
+  }
 }
 
 .branch-menu dl dt {
@@ -526,12 +539,14 @@ body {
 @media (min-width: 768px) {
   .branch-menu__contents__takeout {
     width: 100%;
+    margin: 40px 20px 40px 40px;
   }
 }
 
 @media (min-width: 1025px) {
   .branch-menu__contents__takeout {
     min-height: 1193px;
+    margin: 120px 40px 120px 110px;
   }
 }
 
@@ -551,12 +566,14 @@ body {
 @media (min-width: 768px) {
   .branch-menu__contents__eatin {
     width: 100%;
+    margin: 40px 40px 40px 20px;
   }
 }
 
 @media (min-width: 1025px) {
   .branch-menu__contents__eatin {
     min-height: 1193px;
+    margin: 120px 110px 120px 40px;
   }
 }
 
@@ -575,7 +592,7 @@ body {
 @media (min-width: 1025px) {
   .p-access__desc {
     height: 649px;
-    width: 950px;
+    width: 60%;
   }
 }
 
@@ -620,6 +637,7 @@ body {
   height: 690px;
   background-image: url(/img/map.png);
   background-size: cover;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -632,6 +650,16 @@ body {
   .p-access__map {
     height: 649px;
   }
+}
+
+.p-access__map::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .p-footer__menu {
