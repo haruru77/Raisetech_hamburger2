@@ -10,6 +10,7 @@
         }
         h1 {
             font-family: 'Roboto', sans-serif;
+            font-weight: bold;
             font-size: 2.5rem;
             padding-top: 40px;
             @include break($pc) {
@@ -49,7 +50,7 @@
 .p-header__menu {
     font-family: 'Roboto', sans-serif;
     color: $main-color;
-    font-size: 4.2vw;
+    font-size: 5vw;
     font-weight: bold;
     position: absolute;
     top: 16px;

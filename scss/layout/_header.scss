@@ -1,61 +1,42 @@
 html {
-  min-height: 100%;
+    height: 100%;
 }
 
 body {
-  position: relative;
-  height: 100%;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body.is-open {
+    position: fixed;
 }
 
 .all-wrapper {
-  position: relative;
-  height: 100%;
-  @include break($pc) {
-    display: grid;
-    grid-template-areas:
-      "header sidebar"
-      "main sidebar"
-      "footer footer";
-    grid-template-rows: 217px auto 150px;
-    grid-template-columns: auto 20%;
-
-    .l-header {
-      grid-area: header;
+    position: relative;
+    height: 100%;
+    @include break($pc) {
+        display: grid;
+        grid-template-areas: "header sidebar" "main sidebar" "footer footer";
+        grid-template-rows: 217px auto 150px;
+        grid-template-columns: auto 20%;
+        .l-header {
+            grid-area: header;
+        }
+        .l-article-contents {
+            grid-area: main;
+        }
+        .l-sidebar {
+            grid-area: sidebar;
+        }
+        .l-footer {
+            grid-area: footer;
+        }
     }
-     
-    .l-article-contents {
-      grid-area: main;
-    }
-     
-    .l-article-sidebar {
-      grid-area: sidebar;
-    }
-     
-    .l-footer {
-      grid-area: footer;
-    }
-    
-    
-  }
 }
 
 .l-header {
-  height: 217px;
-  background-color: #fff7ef;
-}
-
-.p-sidebar__back {
-  // transform: translateX(-100vw);
-  // transition: all 0.3s linear;
-  display: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
-  z-index: 10;
-  &.is-active {
-    transform: translateX(0);
-  }
+    height: 217px;
+    background-color: #fff7ef;
 }

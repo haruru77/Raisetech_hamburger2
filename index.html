@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/style.css">
     <script src="https://kit.fontawesome.com/eccf6a65cc.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
     <link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css">
     <title>Hamburger</title>
@@ -15,7 +14,7 @@
 
 <body>
     <div class="all-wrapper">
-        <div class="p-sidebar__back p-sidebar"></div>
+        <div class="p-sidebar__back"></div>
         <header class="l-header">
             <div class="p-header__top">
                 <h1>Hamburger</h1>
@@ -24,9 +23,9 @@
                     <input class="p-search-form__submit" type="submit" value="検索">
                 </form>
             </div>
-            <div class="p-header__menu p-sidebar">
+            <button class="p-header__menu p-sidebar">
                 Menu
-            </div>
+            </button>
         </header>
         <article class="l-article-contents">
             <div class="branch-menu">
@@ -78,15 +77,15 @@
                 <div class="p-access__map"></div>
             </section>
         </article>
-        <article class="l-article-sidebar">
+        <article class="l-sidebar">
             <div class="p-sidebar__menu__wrap">
                 <div class="p-sidebar__main">
                     <div class="u-sidebar__pc__menu">
                         Menu
                     </div>
-                    <div class="u-close p-sidebar">
+                    <button class="u-close p-sidebar">
                         <i class="fas fa-times"></i>
-                    </div>
+                    </button>
                     <ul class="p-sidebar__menu">
                         <li class="p-sidebar__menu__main">バーガー</li>
                         <ul>

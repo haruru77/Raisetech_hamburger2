@@ -1,6 +1,12 @@
 $(".p-sidebar").click(function() {
-    // $(this).toggleClass("on");
-    $(".p-sidebar__menu__wrap").slideToggle(300);
-    $(".l-nav-close").slideToggle(300);
-    $(".p-sidebar__back").slideToggle(300);
-  });
+    $(this).toggleClass("is-open");
+    $(".p-sidebar__menu__wrap").toggleClass("is-open");
+    $(".p-sidebar__back").toggleClass("is-open");
+    $("body").toggleClass("is-open");
+});
+$(".p-sidebar__back").click(function() {
+    $(this).toggleClass("is-open");
+    $(".p-sidebar__menu__wrap").toggleClass("is-open");
+    $(".p-sidebar").toggleClass("is-open");
+    $("body").toggleClass("is-open");
+});
