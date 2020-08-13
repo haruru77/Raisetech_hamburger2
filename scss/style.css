@@ -734,8 +734,8 @@ body.is-open {
   height: 100%;
   background-color: #f2ede9;
   position: absolute;
-  top: -100%;
-  right: 0;
+  top: 0;
+  right: -100%;
   z-index: 100;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -744,7 +744,7 @@ body.is-open {
 }
 
 .p-sidebar__menu__wrap.is-open {
-  top: 0;
+  right: 0;
   position: fixed;
   padding-bottom: 300px;
 }
@@ -754,17 +754,15 @@ body.is-open {
     position: relative;
     z-index: 0;
     width: 100%;
-    top: 0;
+    right: 0;
   }
 }
 
 .p-sidebar__back {
-  -webkit-transition: all 300ms 0s ease;
-  transition: all 300ms 0s ease;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: -100%;
-  left: 0;
+  top: 0;
+  right: -100%;
   width: 100%;
   min-height: 100%;
   z-index: 10;
@@ -772,7 +770,7 @@ body.is-open {
 }
 
 .p-sidebar__back.is-open {
-  top: 0;
+  right: 0;
   position: fixed;
 }
 
@@ -912,7 +910,7 @@ body.is-open {
 
 .u-close {
   position: absolute;
-  top: 25px;
+  top: 10px;
   right: 25px;
   font-size: 2.5rem;
   color: #707070;
