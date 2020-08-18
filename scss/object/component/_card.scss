@@ -16,7 +16,6 @@
     &__heading {
         height: 355px;
         background-color: #3C2B1C;
-        color: #ffffff;
         padding: 0 17px;
         @include break($tb) {
             padding: 0 35px;
@@ -26,6 +25,7 @@
             padding: 0 63px;
         }
         h3 {
+            color: #ffffff;
             padding: 32px 0 17px;
             font-size: 1.25rem;
             @include break($tb) {
@@ -37,11 +37,15 @@
             }
         }
         h4 {
+            color: #ffffff;
             padding-bottom: 10px;
             @include break($pc) {
                 padding-bottom: 17px;
                 font-size: 1.625rem;
             }
+        }
+        p {
+            color: #ffffff;
         }
         a {
             display: block;

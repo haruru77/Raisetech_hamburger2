@@ -4,11 +4,12 @@
         display: flex;
         justify-content: space-between;
         a {
-            color: #707070;
+            color: $main-color;
             text-decoration: none;
         }
         i {
             padding: 0 5px;
+            color: $main-color;
         }
         @include break($tb) {
             display: none;
@@ -16,7 +17,6 @@
     }
     &__tb {
         display: none;
-        color: #707070;
         padding: 105px 0 30px;
         justify-content: center;
         align-items: center;
@@ -26,12 +26,13 @@
         p {
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
+            color: $main-color;
             margin-right: 20px;
         }
         a {
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
-            color: #707070;
+            color: $main-color;
             text-decoration: none;
             width: 35px;
             height: 35px;
@@ -39,6 +40,9 @@
             line-height: 33px;
             border: 1px solid #707070;
             margin-right: 15px;
+            i {
+                color: $main-color;
+            }
         }
         a:first-of-type,
          :last-of-type {

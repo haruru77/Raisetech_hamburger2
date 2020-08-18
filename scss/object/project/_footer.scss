@@ -1,11 +1,11 @@
 .p-footer {
     &__menu {
         font-size: 1.25rem;
-        color: #ffffff;
         list-style: none;
         display: flex;
         justify-content: center;
         li {
+            color: #ffffff;
             margin-top: 40px;
             padding: 0 5px;
         }

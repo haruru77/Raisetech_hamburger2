@@ -5,7 +5,6 @@ html {
 body {
     position: relative;
     width: 100%;
-    overflow-x: hidden;
     height: 100%;
 }
 
@@ -14,6 +13,7 @@ body.is-open {
 }
 
 .all-wrapper {
+    overflow-x: hidden;
     position: relative;
     height: 100%;
     @include break($pc) {
@@ -25,6 +25,12 @@ body.is-open {
             grid-area: header;
         }
         .l-article-contents {
+            grid-area: main;
+        }
+        .l-archive-contents {
+            grid-area: main;
+        }
+        .l-single-contents {
             grid-area: main;
         }
         .l-sidebar {
