@@ -24,13 +24,7 @@ body.is-open {
         .l-header {
             grid-area: header;
         }
-        .l-article-contents {
-            grid-area: main;
-        }
-        .l-archive-contents {
-            grid-area: main;
-        }
-        .l-single-contents {
+        .l-main-contents {
             grid-area: main;
         }
         .l-sidebar {
